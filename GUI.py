@@ -2,7 +2,7 @@ import tkinter
 # import requests
 # import json
 #
-# url = 'https://raw.githubusercontent.com/tijmenjoppe/AnalyticalSkills-student/master/project/data/steam.json'
+# url = 'https://raw.githubusercontent.com/SjaakyNewton/PROJB/main/steam.json'
 #
 # response = requests.get(url)
 #
@@ -10,6 +10,7 @@ import tkinter
 #
 # for rij in content:
 #     print(rij['name'])
+
 """"
 Steam colour codes:
 #171a21 donker donker blauw
