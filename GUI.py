@@ -71,6 +71,13 @@ gamesScherm = tkinter.Frame(master=root,bg = '#1b2838')
 gamesScherm.pack()
 gamesNuGespeeld = tkinter.Label(master=gamesScherm,text='Games die nu gespeeld worden:',bg = '#0197CF',fg='white')
 gamesNuGespeeld.pack(pady=3)
+
+response = requests.get(url)
+content = json.loads(response.text)
+game1 = (content[220]["name"])
+huidigegame = tkinter.Label(master=gamesScherm, text=game1,bg = '#0197CF',fg='white')
+huidigegame.pack(pady=3)
+
 gamesMogelijkGespeeld = tkinter.Label(master=gamesScherm,text='Games die nu mogelijk gespeeld worden:',bg = '#0197CF',fg='white')
 gamesMogelijkGespeeld.pack(pady=3)
 terugButton = tkinter.Button(master=gamesScherm, text ='Terug',command=startFrame,bg = '#2a475e',fg='#c7d5e0')
